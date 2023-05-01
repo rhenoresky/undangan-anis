@@ -2,7 +2,7 @@ import Image from "next/image"
 import G_Utama from "../../public/DSC07216.webp"
 import { BsPauseFill, BsPlayFill, BsWhatsapp, BsInstagram } from "react-icons/bs"
 import { GoBrowser } from "react-icons/go"
-import lagu from "../../public/lagu2.mp3"
+import lagu from "../../public/lagu.mp3"
 import { useRouter } from "next/router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faXmark, faEnvelopeOpenText, faCalendarDays, faImages, faHeartCircleCheck, faBook, faGift } from '@fortawesome/free-solid-svg-icons'
