@@ -151,7 +151,7 @@ export default function Home(props) {
           <FontAwesomeIcon id="buka" icon={faBars} className="text-[25px] text-white" />
           <FontAwesomeIcon id="tutup" icon={faXmark} className="text-[25px] hidden text-white" />
         </button>
-        <nav id="navbar" className="z-50 hidden kiri justify-evenly items-center bg-pause w-4/6 h-10 fixed bottom-5 left-[50%] -translate-y-1/2 rounded-[12px]">
+        <nav id="navbar" className="z-50 hidden kiri justify-evenly items-center bg-pause w-4/6 h-10 fixed bottom-5 left-[10%] rounded-[12px]">
           <a href="#atas" className="flex justify-center items-center w-[32px] h-[32px] tekan rounded-[10px]">
             <FontAwesomeIcon icon={faEnvelopeOpenText} className="text-white" />
           </a>
