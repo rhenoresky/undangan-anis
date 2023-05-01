@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: castellar;
+  src: url(../../public/font/Castellar.ttf);
+}
+
+@font-face {
+  font-family: monttocks;
+  src: url(../../public/font/monttocks.woff2);
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +26,283 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #4f4f4f;
+}
+
+.singup {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 1em;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+  width: 300px;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #555555, #474747);
+  box-shadow: 20px 20px 40px #434343,
+    -20px -20px 40px #5b5b5b;
+  border-radius: 8px;
+}
+
+.inputBox,
+.inputBox1 {
+  position: relative;
+  width: 250px;
+}
+
+.inputBox input,
+.inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+  transform: translateX(142px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #4f4f4f;
+  letter-spacing: 0.2em;
+  color: white;
+  border: 2px solid white;
+}
+
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+  transform: translateX(156px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #4f4f4f;
+  letter-spacing: 0.2em;
+  border: 2px solid white;
+  color: white;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+  color: white;
+}
+
+.enter:hover {
+  border-radius: 25px;
+}
+
+.input {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  margin: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: hsla(0,0%,100%,.15) 0 1px 1px, inset hsla(0,0%,0%,.5) 0 0 0 1px;
+  background-color: hsla(0,0%,0%,.2);
+  background-image: -webkit-radial-gradient( hsla(200,100%,90%,1) 0%, hsla(200,100%,70%,1) 15%, hsla(200,100%,60%,.3) 28%, hsla(200,100%,30%,0) 70% );
+  background-repeat: no-repeat;
+  transition: background-position .15s cubic-bezier(.8, 0, 1, 1),
+    transform .25s cubic-bezier(.8, 0, 1, 1);
+  outline: none;
+}
+
+.input:checked {
+  transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1),
+    transform .25s cubic-bezier(0, 0, .2, 1);
+}
+
+.input:active {
+  transform: scale(1.5);
+  transition: ransform .1s cubic-bezier(0, 0, .2, 1);
+}
+
+.input,
+.input:active {
+  background-position: 0 24px;
+}
+
+.input:checked {
+  background-position: 0 0;
+}
+
+.input:checked ~ .input,
+.input:checked ~ .input:active {
+  background-position: 0 -24px;
+}
+
+.hadir {
+  animation: muncul 2s ease-in-out;
+}
+
+.bg-pause {
+  background-color: #555555;
+  border: 1px solid #474747;
+}
+
+.bg-calon {
+  background: linear-gradient(145deg, #555555, #474747);
+  box-shadow: 20px 20px 40px #434343,
+    -20px -20px 40px #5b5b5b;
+}
+
+.bg-calon2 {
+  background: linear-gradient(145deg, #555555, #474747);
+  box-shadow: 42px 42px 84px #434343,
+    -42px -42px 84px #5b5b5b;
+}
+
+.tekan:hover {
+  background: #4f4f4f;
+  box-shadow: inset 1px 1px 2px #434343,
+    inset -1px -1px 2px #5b5b5b;
+
+}
+
+.kanan {
+  animation: fadeInRight .3s ease-in;
+}
+
+.kotak-calon {
+  position: relative;
+  transform: scale(.5);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.zoom-in {
+  position: relative;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.countdown-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #555555, #474747);
+  box-shadow: 10px 10px 20px #434343,
+    -10px -10px 20px #5b5b5b;
+}
+
+.bg-jadwal {
+  border-radius: 25px;
+  background: linear-gradient(145deg, #555555, #474747);
+  box-shadow: 30px 30px 60px #434343,
+    -30px -30px 60px #5b5b5b;
+}
+
+.b-top {
+  border: none;
+  outline: none;
+  border-top: 2px solid white;
+  width: 100%;
+  background: transparent;
+}
+
+@keyframes muncul {
+  0% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .posisi {
+    object-position: -68px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .posisi {
+    object-position: -20px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .text-atas {
+    font-size: 84px;
+    line-height: 1;
+  }
+
+  .text-atas2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
