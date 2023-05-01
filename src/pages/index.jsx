@@ -278,28 +278,28 @@ export default function Home(props) {
             </div>
           </div>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#4f4f4f" fillOpacity="1" d="M0,160L80,170.7C160,181,320,203,480,192C640,181,800,139,960,138.7C1120,139,1280,181,1360,202.7L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+          <path fill="#323232" fillOpacity="1" d="M0,160L80,170.7C160,181,320,203,480,192C640,181,800,139,960,138.7C1120,139,1280,181,1360,202.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+        <div className="bg-[#323232] h-[200px] md:h-[250px] w-full flex flex-col justify-center items-center">
+          <div className="flex justify-center items-center gap-20">
+            <a target="_blank" href="https://wa.me/6281214196304">
+              <BsWhatsapp className="text-white text-[30px]" />
+            </a>
+            <a target="_blank" href="https://instagram.com/rhenoresky?igshid=ZDdkNTZiNTM=">
+              <BsInstagram className="text-white text-[30px]" />
+            </a>
+            <a target="_blank" href="https://nizny.my.id/">
+              <GoBrowser className="text-white text-[30px]" />
+            </a>
+          </div>
+          <div className="flex justify-center flex-col items-center mt-5 w-[310px] md:w-[450px]">
+            <div className="b-top"></div>
+            <p className="text-white font-six font-semibold italic mt-5">Copyright & Development By Rheno</p>
+          </div>
+        </div>
       </main >
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#4f4f4f" fillOpacity="1" d="M0,160L80,170.7C160,181,320,203,480,192C640,181,800,139,960,138.7C1120,139,1280,181,1360,202.7L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-        <path fill="#323232" fillOpacity="1" d="M0,160L80,170.7C160,181,320,203,480,192C640,181,800,139,960,138.7C1120,139,1280,181,1360,202.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-      </svg>
-      <footer className="bg-[#323232] h-[200px] md:h-[250px] w-full flex flex-col justify-center items-center">
-        <div className="flex justify-center items-center gap-20">
-          <a target="_blank" href="https://wa.me/6281214196304">
-            <BsWhatsapp className="text-white text-[30px]" />
-          </a>
-          <a target="_blank" href="https://instagram.com/rhenoresky?igshid=ZDdkNTZiNTM=">
-            <BsInstagram className="text-white text-[30px]" />
-          </a>
-          <a target="_blank" href="https://nizny.my.id/">
-            <GoBrowser className="text-white text-[30px]" />
-          </a>
-        </div>
-        <div className="flex justify-center flex-col items-center mt-5 w-[310px] md:w-[450px]">
-          <div className="b-top"></div>
-          <p className="text-white font-six font-semibold italic mt-5">Copyright & Development By Rheno</p>
-        </div>
-      </footer>
     </>
   )
 }
