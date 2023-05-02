@@ -78,12 +78,12 @@ export default function Jadwal() {
             <div className="justify-center items-center flex flex-col md:flex-row mt-28 md:gap-32 gap-16">
                 <div className="w-[300px] flex items-center justify-center flex-col text-center h-[300px] border-[2px] border-solid border-white rounded-[5px]">
                     <p className="font-three text-7xl text-white">Akad</p>
-                    <p className="font-six text-base font-light italic text-white mt-3">Minggu, 28 Mei 2023<br />Pukul, 09.00 WIB - Selesai</p>
+                    <p className="font-six text-base font-light italic text-white mt-3">Minggu, 28 Mei 2023<br />Pukul, 08.00 WIB - Selesai</p>
                     <p className="font-six mt-6 text-base font-light italic text-white">Bertempat di Gedung Korpri<br />Jln. Raya Bandung Sadewata<br />Kec. Karangtengah Kab. Cianjur</p>
                 </div>
                 <div className="w-[300px] flex items-center justify-center flex-col text-center h-[300px] border-[2px] border-solid border-white rounded-[5px]">
                     <p className="font-three text-7xl text-white">Resepsi</p>
-                    <p className="font-six text-base font-light italic text-white mt-5">Minggu, 28 Mei 2023<br />Pukul, 10.00 WIB - 15.00 WIB</p>
+                    <p className="font-six text-base font-light italic text-white mt-5">Minggu, 28 Mei 2023<br />Pukul, 10.00 WIB - 14.00 WIB</p>
                     <p className="font-six mt-6 text-base font-light italic text-white">Bertempat di Gedung Korpri<br />Jln. Raya Bandung Sadewata<br />Kec. Karangtengah Kab. Cianjur</p>
                 </div>
             </div>

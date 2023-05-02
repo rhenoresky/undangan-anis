@@ -42,7 +42,7 @@ export default function Home(props) {
     name: '',
     status: ''
   })
-  const [salin, setSalin] = useState('Salin Rekening')
+  // const [salin, setSalin] = useState('Salin Rekening')
   const [wordSatu, setWordSatu] = useState('RSVP')
   const [wordDua, setWordDua] = useState('KIRIM UCAPAN')
   const router = useRouter();
@@ -262,7 +262,7 @@ export default function Home(props) {
               })}
             </div>
           </div>
-          <div id="hadiah" className="flex flex-col justify-center items-center">
+          {/* <div id="hadiah" className="flex flex-col justify-center items-center">
             <p className="font-six italic text-2xl text-white">Beri Hadiah Kepada Kedua Mempelai</p>
             <div className="mt-5 w-[300px] flex items-center justify-center flex-col text-center h-[300px] border-[2px] border-solid border-white rounded-[5px]">
               <p className="font-three text-5xl text-white">BCA</p>
@@ -276,7 +276,7 @@ export default function Home(props) {
                 }, 800);
               }}>{salin}</button>
             </div>
-          </div>
+          </div> */}
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path fill="#4f4f4f" fillOpacity="1" d="M0,160L80,170.7C160,181,320,203,480,192C640,181,800,139,960,138.7C1120,139,1280,181,1360,202.7L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
