@@ -1,38 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wedding Invitation Website Project
 
-## Getting Started
+## Deskripsi Proyek
 
-First, run the development server:
+Proyek ini bertujuan untuk undangan pernikahan secara online, memungkinkan pengantin untuk menghemat waktu dan biaya dalam penyebaran informasi. Website ini menyajikan informasi lengkap seputar acara pernikahan, dari detail pengantin, reservasi undangan, jadwal akad dan resepsi, lokasi, galeri foto, hingga ucapan selamat dari tamu. Fitur khusus seperti music pengiring dan hitung mundur tanggal pernikahan juga disediakan untuk meningkatkan pengalaman pengguna.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Fitur Utama
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. **Informasi Pengantin**
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+   - Menampilkan profil lengkap kedua pengantin.
+   - Foto kenangan semasa berpacaran.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### 2. **Reservasi Undangan**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+   - Formulir reservasi undangan untuk memudahkan tamu RSVP.
+   - Pengelolaan data tamu yang telah melakukan reservasi.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 3. **Jadwal Acara**
 
-## Learn More
+   - Menampilkan jadwal lengkap untuk acara akad dan resepsi.
 
-To learn more about Next.js, take a look at the following resources:
+### 4. **Lokasi Acara**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   - Peta untuk memandu tamu ke lokasi acara.
+   - Alamat lengkap dan petunjuk jalan yang jelas.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 5. **Galeri Foto**
 
-## Deploy on Vercel
+   - Album foto pre-wedding dan momen-momen spesial.
+   - Tampilan grid yang indah untuk menampilkan galeri.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 6. **Ucapan Selamat**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   - Kotak komentar atau formulir khusus untuk tamu memberikan ucapan selamat.
+   - Pengelolaan dan tampilan ucapan selamat yang responsif.
+
+### 7. **Music Pengiring dan Hitung Mundur**
+
+   - Pemutar musik dengan lagu pengiring.
+   - Hitung mundur menuju tanggal pernikahan.
+
+### 8. **Desain Responsif dengan Tailwind CSS**
+
+   - Tampilan yang responsif untuk pengalaman pengguna yang baik di berbagai perangkat.
+
+### 9. **Next.js Framework**
+
+   - Menerapkan Next.js sebagai framework utama untuk pengembangan front-end.
+
+### 10. **PlanetScale untuk Database Cloud**
+
+   - Menggunakan PlanetScale sebagai platform database cloud untuk kestabilan dan skalabilitas.
